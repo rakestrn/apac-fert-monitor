@@ -15,6 +15,7 @@ export const crisisEvents = [
   { date: "2026-04-17", label: "Hormuz briefly reopened (ceasefire)", short: "Brief reopen", severity: "low" as const },
   { date: "2026-04-22", label: "Ceasefire expires; Strait re-closes", short: "Re-closed", severity: "high" as const },
   { date: "2026-04-24", label: "U.S. sanctions 40 shadow fleet vessels", short: "Shadow fleet hit", severity: "medium" as const },
+  { date: "2026-05-06", label: "Fertilizer costs jump in Illinois after Iran conflict (USDA-AMS May 1 pricing cited)", short: "US fert spike", severity: "medium" as const },
 ];
 
 // === MONTHLY UREA PRICES ($/MT, FOB benchmarks) ===
@@ -126,6 +127,8 @@ export const exchangeRatios: {
   { date: "2026-02", cornUreaUS: 84, cornUreaAPAC: 89, soyMapBrazil: 68, cornPotashUS: 56 },
   { date: "2026-03", cornUreaUS: 109, cornUreaAPAC: 115, soyMapBrazil: 73, cornPotashUS: 58 },
   { date: "2026-04", cornUreaUS: 126, cornUreaAPAC: 131, soyMapBrazil: 76, cornPotashUS: 61 },
+  // 2026-05: corn/soy updated from CME settles; fertilizer denominators unchanged from prior month
+  { date: "2026-05", cornUreaUS: 111, cornUreaAPAC: 116, soyMapBrazil: 68, cornPotashUS: 55 },
 ];
 
 // 5-year statistical bands for ratios (used to show "where we are vs history")
