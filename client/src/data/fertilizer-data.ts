@@ -16,6 +16,7 @@ export const crisisEvents = [
   { date: "2026-04-22", label: "Ceasefire expires; Strait re-closes", short: "Re-closed", severity: "high" as const },
   { date: "2026-04-24", label: "U.S. sanctions 40 shadow fleet vessels", short: "Shadow fleet hit", severity: "medium" as const },
   { date: "2026-05-06", label: "Fertilizer costs jump in Illinois after Iran conflict (USDA-AMS May 1 pricing cited)", short: "US fert spike", severity: "medium" as const },
+  { date: "2026-05-07", label: "India IPL secures 1.35 Mt DAP via tender (14 suppliers)", short: "India DAP tender", severity: "medium" as const },
 ];
 
 // === MONTHLY UREA PRICES ($/MT, FOB benchmarks) ===
@@ -127,8 +128,10 @@ export const exchangeRatios: {
   { date: "2026-02", cornUreaUS: 84, cornUreaAPAC: 89, soyMapBrazil: 68, cornPotashUS: 56 },
   { date: "2026-03", cornUreaUS: 109, cornUreaAPAC: 115, soyMapBrazil: 73, cornPotashUS: 58 },
   { date: "2026-04", cornUreaUS: 126, cornUreaAPAC: 131, soyMapBrazil: 76, cornPotashUS: 61 },
-  // 2026-05: corn/soy updated from CME settles; fertilizer denominators unchanged from prior month
-  { date: "2026-05", cornUreaUS: 111, cornUreaAPAC: 116, soyMapBrazil: 68, cornPotashUS: 55 },
+  // 2026-05-11: First weekly snapshot from cron — CME settles used last week.
+  { date: "2026-05-11", cornUreaUS: 111, cornUreaAPAC: 116, soyMapBrazil: 68, cornPotashUS: 55 },
+  // 2026-05-18: CME corn JUL26 settle $4.5563/bu, soy JUL26 $11.77/bu. Fertilizer denominators held at Apr levels (paid-source input pending).
+  { date: "2026-05-18", cornUreaUS: 187, cornUreaAPAC: 193, soyMapBrazil: 74, cornPotashUS: 112 },
 ];
 
 // 5-year statistical bands for ratios (used to show "where we are vs history")
