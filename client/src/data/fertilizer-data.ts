@@ -132,6 +132,8 @@ export const exchangeRatios: {
   { date: "2026-05-11", cornUreaUS: 111, cornUreaAPAC: 116, soyMapBrazil: 68, cornPotashUS: 55 },
   // 2026-05-18: CME corn JUL26 settle $4.5563/bu, soy JUL26 $11.77/bu. Fertilizer denominators held at Apr levels (paid-source input pending).
   { date: "2026-05-18", cornUreaUS: 187, cornUreaAPAC: 193, soyMapBrazil: 74, cornPotashUS: 112 },
+  // 2026-05-25: CME corn JUL26 settle $4.6325/bu, soy JUL26 $11.965/bu. Fertilizer denominators held at Apr levels (paid-source input pending).
+  { date: "2026-05-25", cornUreaUS: 184, cornUreaAPAC: 189, soyMapBrazil: 73, cornPotashUS: 110 },
 ];
 
 // 5-year statistical bands for ratios (used to show "where we are vs history")
@@ -157,6 +159,8 @@ export const hormuzTransits: { date: string; commercial: number; darkFleet: numb
   { date: "2026-04-17", commercial: 78, darkFleet: 60 }, // brief reopen
   { date: "2026-04-22", commercial: 35, darkFleet: 68 }, // re-close
   { date: "2026-04-29", commercial: 28, darkFleet: 71 },
+  // 2026-05-11 to 2026-05-17: weekly transits cited in Lloyd's List (via Iran International). PortWatch page is client-rendered and did not expose the weekly count in text extraction.
+  { date: "2026-05-17", commercial: 54, darkFleet: 0 },
 ];
 
 // === CHINA EXPORT QUOTA STATUS ===
