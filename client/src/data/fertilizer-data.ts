@@ -131,7 +131,8 @@ export const exchangeRatios: {
   // 2026-05-11: First weekly snapshot from cron — CME settles used last week.
   { date: "2026-05-11", cornUreaUS: 111, cornUreaAPAC: 116, soyMapBrazil: 68, cornPotashUS: 55 },
   // 2026-05-18: CME corn JUL26 settle $4.5563/bu, soy JUL26 $11.77/bu. Fertilizer denominators held at Apr levels (paid-source input pending).
-  { date: "2026-05-18", cornUreaUS: 187, cornUreaAPAC: 193, soyMapBrazil: 74, cornPotashUS: 112 },
+  { date: "2026-05-18", cornUreaUS: 187, cornUreaAPAC: 193, soyMapBrazil: 74, cornPotashUS: 112 },  { date: "2026-06-08", cornUreaUS: 204, cornUreaAPAC: 209, soyMapBrazil: 77, cornPotashUS: 122 },
+
 ];
 
 // 5-year statistical bands for ratios (used to show "where we are vs history")
