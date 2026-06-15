@@ -17,6 +17,8 @@ export const crisisEvents = [
   { date: "2026-04-24", label: "U.S. sanctions 40 shadow fleet vessels", short: "Shadow fleet hit", severity: "medium" as const },
   { date: "2026-05-06", label: "Fertilizer costs jump in Illinois after Iran conflict (USDA-AMS May 1 pricing cited)", short: "US fert spike", severity: "medium" as const },
   { date: "2026-05-07", label: "India IPL secures 1.35 Mt DAP via tender (14 suppliers)", short: "India DAP tender", severity: "medium" as const },
+  { date: "2026-05-26", label: "Farmdoc: Consolidation trends in U.S. nitrogen fertilizer", short: "N consolidation", severity: "low" as const },
+  { date: "2026-06-09", label: "Farmdoc: Impacts of consolidation in ag inputs (farmer survey)", short: "Ag input survey", severity: "low" as const },
 ];
 
 // === MONTHLY UREA PRICES ($/MT, FOB benchmarks) ===
@@ -134,6 +136,12 @@ export const exchangeRatios: {
   { date: "2026-05-18", cornUreaUS: 187, cornUreaAPAC: 193, soyMapBrazil: 74, cornPotashUS: 112 },
   // 2026-05-25: CME corn JUL26 settle $4.6325/bu, soy JUL26 $11.965/bu. Fertilizer denominators held at Apr levels (paid-source input pending).
   { date: "2026-05-25", cornUreaUS: 184, cornUreaAPAC: 189, soyMapBrazil: 73, cornPotashUS: 110 },
+  // 2026-06-01: CME corn JUL26 $4.4663/bu (-3.6% w/w), soy JUL26 $11.866/bu (-0.9% w/w).
+  { date: "2026-06-01", cornUreaUS: 191, cornUreaAPAC: 196, soyMapBrazil: 74, cornPotashUS: 114 },
+  // 2026-06-08: CME corn JUL26 $4.1738/bu (-6.6% w/w), soy JUL26 $11.436/bu (-3.6% w/w).
+  { date: "2026-06-08", cornUreaUS: 204, cornUreaAPAC: 209, soyMapBrazil: 77, cornPotashUS: 122 },
+  // 2026-06-15: CME corn JUL26 $4.1265/bu (-1.1% w/w, 4th down week), soy JUL26 $11.134/bu (-2.6% w/w).
+  { date: "2026-06-15", cornUreaUS: 206, cornUreaAPAC: 213, soyMapBrazil: 79, cornPotashUS: 124 },
 ];
 
 // 5-year statistical bands for ratios (used to show "where we are vs history")
@@ -161,6 +169,8 @@ export const hormuzTransits: { date: string; commercial: number; darkFleet: numb
   { date: "2026-04-29", commercial: 28, darkFleet: 71 },
   // 2026-05-11 to 2026-05-17: weekly transits cited in Lloyd's List (via Iran International). PortWatch page is client-rendered and did not expose the weekly count in text extraction.
   { date: "2026-05-17", commercial: 54, darkFleet: 0 },
+  // 2026-06-07: IMF PortWatch (via m-saraiva.github.io chart export). Weekly sum: Container 4 + Dry Bulk 11 + Gen Cargo 9 + Ro-Ro 1 + Tanker 11 = 36. Prior-yr 7d MA ~101.6/day = ~711/week.
+  { date: "2026-06-07", commercial: 36, darkFleet: 0 },
 ];
 
 // === CHINA EXPORT QUOTA STATUS ===
