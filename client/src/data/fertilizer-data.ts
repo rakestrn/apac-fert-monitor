@@ -142,6 +142,8 @@ export const exchangeRatios: {
   { date: "2026-06-08", cornUreaUS: 204, cornUreaAPAC: 209, soyMapBrazil: 77, cornPotashUS: 122 },
   // 2026-06-15: CME corn JUL26 $4.1265/bu (-1.1% w/w, 4th down week), soy JUL26 $11.134/bu (-2.6% w/w).
   { date: "2026-06-15", cornUreaUS: 206, cornUreaAPAC: 213, soyMapBrazil: 79, cornPotashUS: 124 },
+  // 2026-06-22: CME corn JUL26 $4.175/bu (+1.2% w/w, snaps 4-wk losing streak), soy JUL26 $11.2275/bu (+0.8% w/w). Soy uses Jun 18 settle (Jun 19 not yet posted).
+  { date: "2026-06-22", cornUreaUS: 204, cornUreaAPAC: 211, soyMapBrazil: 78, cornPotashUS: 122 },
 ];
 
 // 5-year statistical bands for ratios (used to show "where we are vs history")
@@ -171,6 +173,8 @@ export const hormuzTransits: { date: string; commercial: number; darkFleet: numb
   { date: "2026-05-17", commercial: 54, darkFleet: 0 },
   // 2026-06-07: IMF PortWatch (via m-saraiva.github.io chart export). Weekly sum: Container 4 + Dry Bulk 11 + Gen Cargo 9 + Ro-Ro 1 + Tanker 11 = 36. Prior-yr 7d MA ~101.6/day = ~711/week.
   { date: "2026-06-07", commercial: 36, darkFleet: 0 },
+  // 2026-06-14: IMF PortWatch CSV. Weekly sum: 18 (Container 2 + Dry Bulk 3 + Gen Cargo 7 + Ro-Ro 0 + Tanker 6). CAVEAT: Jun 13-14 daily counts are 0, likely AIS reporting lag (PortWatch dataset only updated through Jun 14). True count probably higher when revisions land. Prior-yr 7d MA ~115/day = ~805/week.
+  { date: "2026-06-14", commercial: 18, darkFleet: 0 },
 ];
 
 // === CHINA EXPORT QUOTA STATUS ===
