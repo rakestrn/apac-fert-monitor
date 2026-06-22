@@ -17,7 +17,8 @@ import { Logo } from "@/components/Logo";
 import { KPICard } from "@/components/KPICard";
 import { PriceChart } from "@/components/PriceChart";
 import { RatioChart } from "@/components/RatioChart";
-import { Sun, Moon, AlertTriangle, TrendingUp, Ship, Globe2, FileText, ExternalLink } from "lucide-react";
+import { Sun, Moon, AlertTriangle, TrendingUp, Ship, Globe2, FileText, ExternalLink, Scale } from "lucide-react";
+import { MofcomTab } from "@/components/MofcomTab";
 import {
   BarChart,
   Bar,
@@ -33,7 +34,7 @@ import {
 
 export default function Dashboard() {
   const [isDark, setIsDark] = useState(true);
-  const [activeTab, setActiveTab] = useState<"overview" | "ratios" | "leading" | "vulnerability">("overview");
+  const [activeTab, setActiveTab] = useState<"overview" | "ratios" | "leading" | "vulnerability" | "mofcom">("overview");
 
   const toggleTheme = () => {
     const next = !isDark;
@@ -83,6 +84,7 @@ export default function Dashboard() {
                 { id: "ratios", label: "Exchange Ratios", icon: FileText },
                 { id: "leading", label: "Leading Indicators", icon: Ship },
                 { id: "vulnerability", label: "APAC Vulnerability", icon: Globe2 },
+                { id: "mofcom", label: "MOFCOM Sensitivity", icon: Scale },
               ] as const
             ).map((t) => {
               const Icon = t.icon;
@@ -113,6 +115,7 @@ export default function Dashboard() {
         {activeTab === "ratios" && <RatiosTab />}
         {activeTab === "leading" && <LeadingTab />}
         {activeTab === "vulnerability" && <VulnerabilityTab />}
+        {activeTab === "mofcom" && <MofcomTab />}
 
         {/* BOTTOM LINE — always visible */}
         <BottomLineCard />
